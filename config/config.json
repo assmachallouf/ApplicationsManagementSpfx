@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "catalog-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/catalog/CatalogWebPart.js",
+          "manifest": "./src/webparts/catalog/CatalogWebPart.manifest.json"
+        }
+      ]
+    },
+    "new-application-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newApplication/NewApplicationWebPart.js",
+          "manifest": "./src/webparts/newApplication/NewApplicationWebPart.manifest.json"
+        }
+      ]
+    },
+    "application-details-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/applicationDetails/ApplicationDetailsWebPart.js",
+          "manifest": "./src/webparts/applicationDetails/ApplicationDetailsWebPart.manifest.json"
+        }
+      ]
+    },
+    "app-details-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/appDetails/AppDetailsWebPart.js",
+          "manifest": "./src/webparts/appDetails/AppDetailsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CatalogWebPartStrings": "lib/webparts/catalog/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "NewApplicationWebPartStrings": "lib/webparts/newApplication/loc/{locale}.js",
+    "ApplicationDetailsWebPartStrings": "lib/webparts/applicationDetails/loc/{locale}.js",
+    "AppDetailsWebPartStrings": "lib/webparts/appDetails/loc/{locale}.js"
+  }
+}

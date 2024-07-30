@@ -1,0 +1,167 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.applicationDetails {
+  overflow: hidden;
+  padding: 1em;
+  color: var(--bodyText);
+  // font-family: $ms-font-family-primary;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 8px;
+    color: var(--bodyText);
+  }
+
+  .attachmentImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: var(--link);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--linkHovered);
+    }
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  border: 2px solid #ccc; /* Bordure de 2px solide grise */
+  padding: 10px; /* Espace intérieur de 10px autour de l'image */
+
+  img {
+    max-width: 100%; /* L'image prendra la largeur maximale disponible */
+    max-height: 100%; /* L'image prendra la hauteur maximale disponible */
+    object-fit: contain; /* S'assure que l'image est contenue dans ses dimensions */
+  }
+}
+
+.centeredHeader {
+  text-align: center; /* Center the text horizontally */
+  margin-bottom: 20px; /* Optional: Add margin for spacing */
+  
+  h1 {
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Adjust font weight */
+    /* You can add more styles here like color, text-transform, etc. */
+  }
+}
+
+.applicationContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0; /* Background color for the container */
+  padding: 20px; /* Padding around the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle lift effect */
+}
+
+.descriptionContainer {
+  margin-bottom: 20px; /* Optional: Margin bottom for spacing */
+}
+
+.description {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.5; /* Optional: Adjust line height for readability */
+}
+
+.infoContainer {
+  font-size: 14px; /* Adjust font size for info text */
+}
+
+.infoContainer p {
+  margin-bottom: 8px; /* Optional: Margin bottom for spacing between info items */
+}
+
+.infoContainer a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.infoContainer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.categoryDetails {
+  margin-top: 20px; // Example margin
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.commentsSection {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  small {
+    color: #888;
+  }
+}
+
+.addCommentSection {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+
+  .ms-TextField {
+    margin-bottom: 10px;
+  }
+
+  .ms-Button {
+    background-color: #0078d4;
+    color: #fff;
+  }
+}
